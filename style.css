@@ -1,0 +1,99 @@
+.reset {
+  all: unset;
+}
+main {
+  display: flex;
+}
+.left {
+  width: 460px;
+  height: 275px;
+  margin-top: 205px;
+  margin-left: 140px;
+}
+.right {
+  width: 580px;
+  height: 679px;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.1);
+  margin-top: 80px;
+  margin-bottom: 80px;
+  border-radius: 6px;
+  padding: 40px;
+}
+
+.logo {
+  margin-bottom: 30px;
+}
+.para {
+  color: var(--cl-grey, #737373);
+  font-family: Brown;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 156.25% */
+  margin-right: 55px;
+}
+div {
+  display: inline-block;
+}
+label {
+  display: block;
+  color: var(--text-headings, #011c34);
+  font-family: Sofia Pro;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.1px;
+  margin: 30px 0 10px 0;
+}
+.input[type=text],[type=number],[type=date]{
+  width: 238px;
+  height: 30px;
+  margin-right: 24px;
+}
+.input[type=password]{
+  width: 500px;
+  height: 30px;
+}
+.select{
+  width: 241px;
+  height: 33px;
+  margin-right: 29px;
+}
+.activity{
+  width: 500px;
+  height: 36px;
+}
+button{
+  background-color: #2EC4B6;
+  width: 500px;
+height: 48px;
+flex-shrink: 0;
+color: var(--basic-100, #FFF);
+text-align: center;
+font-family: Sofia Pro;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.2px;
+}
+.button{
+  margin: 30px 0 16px 0;
+  display: flex;
+  /* justify-content: center; */
+  /* margin: auto; */
+}
+.policy{
+  color: #000;
+font-family: Sofia Pro;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 25px; /* 178.571% */
+}
+span{
+  color: #2EC4B6;
+}
