@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Sign Up</title>
   </head>
@@ -43,7 +49,14 @@
           </div>
           <div>
             <label for="dateOfBirth">Date Of Birth</label>
-            <input type="date" placeholder="Select Here" class="input" />
+            <img src="/u_a_calendar-alt.png" alt="calendar" class="calendar" />
+            <input
+              type="text"
+              placeholder="Select Here"
+              onfocus="(this.type='date')"
+              onblur="(this.type='text')"
+              class="input"
+            />
           </div>
           <br />
           <div>
@@ -71,6 +84,7 @@
           <br />
           <div>
             <label for="password">Password</label>
+            <img src="/show.png" alt="eye" srcset="" class="eye" />
             <input type="password" class="input" />
           </div>
           <br />
@@ -79,8 +93,8 @@
           </div>
         </form>
         <p class="policy">
-          By clicking Register, you agree to our <span>Terms of Use</span> and our <span>Privacy
-          Policy</span>
+          By clicking Register, you agree to our <span>Terms of Use</span> and
+          our <span>Privacy Policy</span>
         </p>
       </section>
     </main>

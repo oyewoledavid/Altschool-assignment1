@@ -3,6 +3,8 @@
 }
 main {
   display: flex;
+background:#f7fdfc
+ ;
 }
 .left {
   width: 460px;
@@ -19,19 +21,28 @@ main {
   margin-top: 80px;
   margin-bottom: 80px;
   border-radius: 6px;
-  padding: 40px;
+  padding: 40px ;
 }
 
 .logo {
   margin-bottom: 30px;
 }
+h2{
+  color: var(--cl-black, #000B0A);
+  font-family: 'Josefin Sans', sans-serif;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: 50px;
+letter-spacing: -0.8px;
+}
 .para {
   color: var(--cl-grey, #737373);
-  font-family: Brown;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 25px; /* 156.25% */
+  line-height: 25px;
   margin-right: 55px;
 }
 div {
@@ -40,7 +51,7 @@ div {
 label {
   display: block;
   color: var(--text-headings, #011c34);
-  font-family: Sofia Pro;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
@@ -48,52 +59,115 @@ label {
   letter-spacing: 0.1px;
   margin: 30px 0 10px 0;
 }
-.input[type=text],[type=number],[type=date]{
+.input[type="text"],
+[type="number"],
+[type="date"] {
   width: 238px;
   height: 30px;
   margin-right: 24px;
+  position: relative;
+  z-index: 1;
 }
-.input[type=password]{
+.input[type="password"] {
   width: 500px;
   height: 30px;
+  position: relative;
+  z-index: 1;
 }
-.select{
+.calendar{
+position: absolute;
+z-index: 2;
+right: 12em;
+top: 17.5em;
+}
+.eye{
+  position: absolute;
+  z-index: 2;
+  right: 13.125em;
+  bottom: 7.3em;
+}
+
+::-webkit-input-placeholder {
+  color: var(--cl-grey, #737373);
+font-family: Sofia Pro;
+font-size: 14px;
+font-style: normal;
+font-weight: 300;
+line-height: 20px; 
+letter-spacing: 0.2px;
+}
+
+::-moz-placeholder {
+  color: var(--cl-grey, #737373);
+font-family: Sofia Pro;
+font-size: 14px;
+font-style: normal;
+font-weight: 300;
+line-height: 20px;
+letter-spacing: 0.2px;
+}
+
+::-ms-placeholder {
+  color: var(--cl-grey, #737373);
+font-family: Sofia Pro;
+font-size: 14px;
+font-style: normal;
+font-weight: 300;
+line-height: 20px;
+letter-spacing: 0.2px;
+}
+
+::placeholder {
+  color: var(--cl-grey, #737373);
+font-family: Sofia Pro;
+font-size: 14px;
+font-style: normal;
+font-weight: 300;
+line-height: 20px; 
+letter-spacing: 0.2px;
+}
+.select {
   width: 241px;
   height: 33px;
   margin-right: 29px;
 }
-.activity{
+.activity {
   width: 500px;
   height: 36px;
 }
-button{
-  background-color: #2EC4B6;
+button {
+  background-color: #2ec4b6;
   width: 500px;
-height: 48px;
-flex-shrink: 0;
-color: var(--basic-100, #FFF);
-text-align: center;
-font-family: Sofia Pro;
-font-size: 16px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-letter-spacing: 0.2px;
+  height: 48px;
+  flex-shrink: 0;
+  color: var(--basic-100, #fff);
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.2px;
 }
-.button{
+.button {
   margin: 30px 0 16px 0;
   display: flex;
-  /* justify-content: center; */
-  /* margin: auto; */
+
 }
-.policy{
+.policy {
   color: #000;
-font-family: Sofia Pro;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 25px; /* 178.571% */
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
 }
-span{
-  color: #2EC4B6;
+span {
+  color: var(--cl-green, #2ec4b6);
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px;
+  text-decoration-line: underline;
 }
