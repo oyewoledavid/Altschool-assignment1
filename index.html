@@ -36,16 +36,17 @@
               id="firstname"
               placeholder="Tolu"
               class="input"
+              required
             />
           </div>
           <div>
             <label for="lastname">Last Name</label>
-            <input type="text" id="lastname" class="input" />
+            <input type="text" id="lastname" class="input" required />
           </div>
           <br />
           <div>
             <label for="gender">Gender</label>
-            <select name="gender" id="gender" class="select input">
+            <select name="gender" id="gender" class="select input" required>
               <option value="male" disabled selected>Select Here</option>
               <option value="male">Male</option>
               <option value="female">Female</option>
@@ -61,6 +62,7 @@
               onblur="(this.type='text')"
               class="input"
               id="dateOfBirth"
+              required
             />
           </div>
           <br />
@@ -71,6 +73,7 @@
               placeholder="Enter Weight"
               class="input"
               id="weight"
+              required
             />
           </div>
           <div>
@@ -80,12 +83,13 @@
               placeholder="Enter Height Here"
               class="input"
               id="height"
+              required
             />
           </div>
           <br />
           <div>
             <label for="activity">Activity Level</label>
-            <select name="activity" id="activity" class="activity">
+            <select name="activity" id="activity" class="activity" required>
               <option value="Beginner" disabled selected>Select Here</option>
               <option value="Beginner">Beginner</option>
               <option value="intermediate">Intermediate</option>
@@ -95,7 +99,7 @@
           <br />
           <div>
             <label for="password">Password</label>
-            <input type="password" class="input" id="password" />
+            <input type="password" class="input" id="password" required />
           </div>
           <br />
           <div class="button">
@@ -108,8 +112,8 @@
         </p>
       </section>
       <p class="policy-mobile">
-        By clicking Register, you agree to our <span>Terms of Use</span> and
-        our <span>Privacy Policy</span>
+        By clicking Register, you agree to our <span>Terms of Use</span> and our
+        <span>Privacy Policy</span>
       </p>
     </main>
   </body>
