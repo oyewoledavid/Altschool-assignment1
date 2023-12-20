@@ -183,7 +183,24 @@ span {
   text-decoration-line: underline;
 }
 
-                /* FOR MOBILE */
+/* FOR TABLET */
+@media only screen and (max-width: 848px) {
+  main {
+    gap: 2.5em;
+    padding: 2.5em 2.5em;
+  }
+  .activity {
+    width: 17.5em;
+  }
+  .input[type="password"] {
+    width: 17.5em;
+  }
+  .para {
+    width: 15em;
+  }
+}
+
+/* FOR MOBILE */
 @media only screen and (max-width: 450px) {
   main {
     flex-direction: column;
@@ -256,22 +273,5 @@ span {
     width: 80%;
     margin: 0 auto;
     margin-top: 1.5em;
-  }
-}
-
-        /* FOR TABLET */
-@media only screen and (max-width: 848px) {
-  main {
-    gap: 2.5em;
-    padding: 2.5em 2.5em;
-  }
-  .activity {
-    width: 17.5em;
-  }
-  .input[type="password"] {
-    width: 17.5em;
-  }
-  .para {
-    width: 15em;
   }
 }
